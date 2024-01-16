@@ -102,7 +102,7 @@ export function Navigation() {
               className="bg-blue-700 p-2 rounded-3xl"
               onClick={handleLogout}
             >
-              Logout
+              Sign Out
             </button>
           </div>
         ) : (
@@ -112,7 +112,7 @@ export function Navigation() {
             className="m-3 text-white bg-blue-700 hover:bg-blue-800 active:bg-blue-700 active:ring-2 active:ring-blue-700  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
             type="button"
           >
-            Log In
+            Sign In
           </button>
         )}
         {isModalOpen && (
@@ -135,7 +135,7 @@ export function Navigation() {
                   </svg>
                 </button>
               </div>
-              <h2 className="text-2xl font-bold mb-6">Log In</h2>
+              <h2 className="text-2xl font-bold mb-6 ml-3">Sign In</h2>
               <input
                 type="text"
                 placeholder="Username"
@@ -154,7 +154,7 @@ export function Navigation() {
                 <p className="text-red-500 mx-3 ">{errorMessage}</p>
               )}
               <p className="flex flex-row p-3 mb-4">
-                New to Weather App?{" "}
+                New to Authentication App?{" "}
                 <a
                   onClick={() => {
                     toggleModal();
@@ -171,7 +171,7 @@ export function Navigation() {
                 }}
                 className=" bg-blue-700 hover:bg-blue-800 active:bg-blue-700 active:ring-2 active:ring-blue-700 text-white font-bold py-2 px-4 rounded-full"
               >
-                Log In
+                Continue
               </button>
             </div>
           </div>
@@ -179,7 +179,7 @@ export function Navigation() {
         ;
         {isModalRegisterOpen && (
           <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col">
+            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col w-1/3">
               <div className="justify-end flex">
                 <button
                   onClick={toggleModalRegister}
